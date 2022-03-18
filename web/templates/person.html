@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>Document Info</h1>
+    <p>Enter the information of document:   </p>
+        <br>
+            <form action="/person_detail" method="post">
+                <input type="hidden" id ="op" name="op" value="I">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_id">ID</span>
+                    <input type="text" class="form-control" name="id_document" aria-label="Sizing example input" aria-describedby="inputGroup_idt">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_title_document">Title document</span>
+                    <input type="text" class="form-control" name="title_document" aria-label="Sizing example input" aria-describedby="inputGroup_name">
+                </div>
+
+                 <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_number_page">Number page</span>
+                    <input type="text" class="form-control" name="number_page" aria-label="Sizing example input" aria-describedby="inputGroup_name">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_category">Category</span>
+                    <input type="text" class="form-control" name="category" aria-label="Sizing example input" aria-describedby="inputGroup_name">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup_Autor">Autor</span>
+                    <input type="text" class="form-control" name="Autor" aria-label="Sizing example input" aria-describedby="inputGroup_lastName">
+                </div>
+                <br >
+                <input class="btn btn-primary" type="submit" name="form" value="Submit" />
+            </form>
+</div>
+{% endblock %}
